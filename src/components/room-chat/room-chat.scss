@@ -1,0 +1,62 @@
+.room-chat {
+  height: 100%;
+
+  > .room-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0 12px;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+    > .title {
+      font-size: 18px;
+    }
+  }
+
+  > .room-body {
+    max-height: calc(100% - 64px - 72px);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 12px;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+
+    > .message {
+      font-size: 14px;
+      background-color: rgb(187, 190, 190);
+      border-radius: 8px;
+      padding: 12px;
+      max-width: 60%;
+      margin: 12px 0px;
+
+      &.-right {
+        align-self: flex-end;
+      }
+      &.-left {
+        align-self: flex-start;
+      }
+    }
+  }
+
+  > .room-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    padding: 0 12px;
+
+    > .input {
+      width: 250px;
+      border: none;
+      outline: none;
+      padding: 12px;
+      border-radius: 10px;
+      background-color: lightgray;
+    }
+
+    > .icon {
+      font-size: 24px;
+      color: black;
+    }
+  }
+}

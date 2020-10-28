@@ -8,7 +8,6 @@ import state from '../store';
   shadow: true,
 })
 export class AZoomChat {
-
   @Method()
   async toggle() {
     state.visible = !state.visible;
@@ -16,9 +15,9 @@ export class AZoomChat {
 
   render() {
     return (
-      <section id="az-chat" class="az-chat">
-        {state.visible ? <az-room-chat></az-room-chat> : null}
-      </section>
+      <div id="az-chat" class="az-chat" style={{ visibility: state.visible ? 'visible' : 'hidden' }}>
+        <az-room-chat></az-room-chat>
+      </div>
     );
   }
 }

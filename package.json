@@ -1,5 +1,5 @@
 {
-  "name": "chat",
+  "name": "s-chat-demo",
   "version": "0.0.1",
   "description": "Stencil Component Starter",
   "main": "dist/index.cjs.js",
